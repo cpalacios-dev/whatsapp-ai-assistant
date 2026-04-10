@@ -1,0 +1,19 @@
+# Python temporales
+__pycache__/
+*.py[cod]
+
+# Entorno virtual
+venv/
+.env
+
+# Sesión de WhatsApp (Privacidad)
+data/session/
+app/whatsapp_session/
+
+# Credenciales de Google
+config/*.json
+service_account.json
+
+# Logs y Datos generados
+logs/
+data/output/
