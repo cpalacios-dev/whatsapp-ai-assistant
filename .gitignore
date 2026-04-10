@@ -1,3 +1,11 @@
+# Python temporales
+__pycache__/
+*.py[cod]
+
+# Entorno virtual
+venv/
+.env
+
 # Sesión de WhatsApp (Privacidad)
 data/session/*
 !data/session/.gitkeep
