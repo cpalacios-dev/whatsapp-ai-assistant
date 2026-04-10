@@ -7,7 +7,7 @@ venv/
 .env
 
 # Sesión de WhatsApp (Privacidad)
-data/session/
+app/data/session/
 app/whatsapp_session/
 
 # Credenciales de Google
