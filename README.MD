@@ -23,6 +23,12 @@ Este proyecto combina **Web Scraping dinámico, Inteligencia Artificial y Automa
 - 🖥️ **Interfaz de Usuario:** Panel de control interactivo para gestionar la ejecución del bot (`Streamlit`).
 - 🧪 **Entorno de Testing:** Sistema de Mocking nativo integrado para simular envíos y fallas sin consumir cuota de IA ni enviar mensajes reales (`unittest.mock`).
   
+## 📸 Demostración del Sistema
+
+<p align="center">
+  <img src="docs/dashboard.PNG" width="800" alt="Dashboard de Streamlit">
+</p>
+
 ## 🛠️ Tecnologías y Librerías
   
 - **Lenguaje:** Python 3.12
@@ -61,6 +67,14 @@ El proyecto sigue principios de ***Separation of Concerns*** (Separación de res
     └── 📁 ui/                     # Frontend
         └── 🐍 dashboard.py
 ```
+
+## 📋 Prerrequisitos
+
+Antes de comenzar, asegúrate de contar con lo siguiente:
+- **Python 3.12** o superior instalado en tu sistema.
+- Una cuenta de **Google Cloud Platform (GCP)** con la API de Google Sheets habilitada.
+- Una cuenta en **Google AI Studio** para obtener la API Key de Gemini.
+- WhatsApp abierto en tu dispositivo móvil para el escaneo inicial del código QR de sesión.
 
 ## ⚙️ Configuración e Instalación
 
@@ -106,5 +120,14 @@ streamlit run app/ui/dashboard.py
 python test.py
 ```
 
+## 🗺️ Roadmap (Próximos Pasos)
+
+- [ ] Contenerización completa con Docker Compose para simplificar el despliegue.
+- [ ] Integración con base de datos SQL (PostgreSQL/SQLite) como alternativa a Google Sheets.
+- [ ] Soporte para extracción automática de datos desde discursos en formato PDF.
+
 ----------
 **Desarrollado por [Cristian Palacios](https://cpalacios-dev.github.io/)** - _Ingeniero Informático | Portfolio Engineer | RPA & Cloud Specialist_
+
+---
+**⚠️ Aviso Legal:** *Este es un proyecto independiente desarrollado estrictamente con fines de aprendizaje, demostración tecnológica y construcción de portafolio. No es una herramienta oficial ni se encuentra afiliada o respaldada por La Iglesia de Jesucristo de los Santos de los Últimos Días, Google LLC, ni WhatsApp Inc.*

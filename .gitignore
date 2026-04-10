@@ -24,3 +24,5 @@ data/output/*
 !data/output/.gitkeep
 data/input/*
 !data/input/.gitkeep
+*.log
+app/logs/*.log
