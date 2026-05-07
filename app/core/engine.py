@@ -2,6 +2,7 @@ import pandas as pd
 import time
 import os
 import logging
+from datetime import datetime
 from google import genai
 from dotenv import load_dotenv
 from google.oauth2.service_account import Credentials
@@ -34,7 +35,14 @@ cliente_gemini = genai.Client(api_key=API_KEY)
 # =================================================================
 # SISTEMA DE LOGS
 # =================================================================
-ruta_log_file = os.path.join(ruta_logs, 'bot_auditoria.log')
+# 1. Generar el sufijo de fecha (ejemplo: 2026-05-07)
+fecha_actual = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+
+# 2. Construir el nombre del archivo con la fecha
+nombre_log = f'bot_auditoria_{fecha_actual}.log'
+
+
+ruta_log_file = os.path.join(ruta_logs, nombre_log)
 os.makedirs(os.path.dirname(ruta_log_file), exist_ok=True)
 
 logging.basicConfig(

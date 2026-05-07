@@ -5,24 +5,42 @@ __pycache__/
 # Entorno virtual
 config/.env
 !config/*.example
+app/config/.env
+!app/config/*.example
 .env
 
 # Sesión de WhatsApp (Privacidad)
 data/session/*
 !data/session/.gitkeep
 app/whatsapp_session/
+app/data/session/*
+!app/data/session/.gitkeep
 
 # Credenciales de Google
 config/*.json
 !config/*.example.json
+app/config/*.json
+!app/config/*.example.json
 service_account.json
+
+
+
 
 # Logs y Datos generados
 logs/*
 !logs/.gitkeep
 data/output/*
+data/output/*.txt
 !data/output/.gitkeep
 data/input/*
 !data/input/.gitkeep
+
+app/logs/*
+!app/logs/.gitkeep
+app/data/output/*
+app/data/output/*.txt
+!app/data/output/.gitkeep
+app/data/input/*
+!app/data/input/.gitkeep
 *.log
 app/logs/*.log
